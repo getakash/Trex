@@ -65,6 +65,7 @@
         @media only screen and (max-width: 37.5em){
             margin-top: 4rem;
             width: 100%;
+            padding: 5rem 2rem 4rem 2rem;
         }
         
         &--date{
@@ -82,7 +83,7 @@
             background-color: $col-prim-dark;
             clip-path: ellipse(50% 70% at 65% 25%);
             @media only screen and (max-width: 37.5em) {
-                top: -2.5%;
+                top: 0%;
                 left: 50%;
                 transform: translateX(-50%) translateY(-50%);
                 clip-path: ellipse(30% 20% at 50% 50%);
