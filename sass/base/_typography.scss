@@ -1,0 +1,28 @@
+.heading-primary{
+    align-self: center !important;
+    backface-visibility: hidden;
+    display: block;
+    font-size: 5rem;
+    margin-bottom: 4rem;
+    background-image: linear-gradient(to right bottom, $col-prim, $col-prim-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 600;
+    transition: all .2s;
+
+    &:hover{
+        transform: skewX(-30deg);
+        letter-spacing: .5rem;
+    }
+}
+
+.heading-secondary{
+    display: inline-block;
+    backface-visibility: hidden;
+    font-size: 2.5rem;
+    text-shadow: 0 1px 2px $col-white;
+    margin-bottom: 2.5rem;
+    color: black;
+    font-weight: 800;
+    transition: all .2s;
+}

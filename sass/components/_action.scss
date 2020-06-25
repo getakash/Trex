@@ -1,0 +1,138 @@
+.action{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    @media only screen and (max-width: 45.25em){
+        flex-direction: column;
+    }
+    &--container{
+        width: 42.5%;
+        @media only screen and (max-width: 45.25em){
+            width: 75%;
+        }
+        height: 15rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 3px;
+        transition: all .2s;
+        margin-bottom: 4rem;
+        &--button{
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: $col-white;
+            font-weight: 600;
+            width: 100%;
+            cursor: pointer;
+            height: 100%;
+
+        }
+        &--form{
+            justify-content: center;
+            position: relative;
+            .cross{
+                position: absolute;
+                top: 1rem;
+                right: 0;
+                font-size: 4rem;
+                font-weight: 800;
+                color: rgb(252, 252, 252);
+                cursor: pointer;
+                transition: all .1s;
+                &:hover{
+                    transform: translateY(-3px) scale(1.05);
+                    text-shadow: 0 5px 5px $col-grey-dark;
+                }
+            }
+        }
+        &:hover{
+            transform: translateY(-1rem) scale(1.05);
+            box-shadow: 0 1rem 2rem rgba($col-grey-dark, 0.7);
+        }
+    }
+    &--container-expense{
+        background-color: $col-purple;
+        margin-right: 2rem;
+    }
+    &--container-income{
+        background-color: $col-sec-dark;
+    }
+}
+.show{
+    // background-color: orangered;
+    width:100%;
+    padding: 2rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+    
+
+    &--box{
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 1rem;
+        width: 100%;
+        font-size: 1.75rem;
+       
+
+        &--tag{
+            background-color: rgba($col-prim,0.2);
+            width: 20%;
+            font-weight: 700;
+            margin-right: 2rem;
+            text-align: start;
+            padding: 0.5rem 2rem;
+             @media only screen and (max-width: 45.25em){
+                padding: 0rem 1rem;
+                display: flex;
+                align-items: center;
+                font-size: 1rem;
+            }
+
+        }
+        &--description{
+            background-color: rgba($col-prim,0.2);
+            width: 60%;
+            font-weight: 600;
+            margin-right: 2rem;
+            text-align: start;
+            padding: 0.5rem 2rem;
+            @media only screen and (max-width: 45.25em){
+                padding: 0rem 1rem;
+                display: flex;
+                align-items: center;
+                font-size: 1rem;
+
+                span{
+                    display: flex;
+                }
+            }
+        }
+        &--amount{
+            background-color: rgba($col-prim,0.2);
+            width: 20%;
+            font-weight: 700;
+            text-align: start;
+            padding: 0.5rem 2rem;
+            @media only screen and (max-width: 45.25em){
+                padding: 0rem 1rem;
+                display: flex;
+                align-items: center;
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    &--balance{
+        text-align: start;
+        // background-color: rgb(218, 207, 210);
+        width: 19.25%;
+        font-size: 2rem;
+        font-weight: 800;
+        padding: 0.5rem 3rem;
+        align-self: flex-end;
+        @media only screen and (max-width: 45.25em){
+                padding: 0.5rem 1.5rem;
+            }
+    }
+}

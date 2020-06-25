@@ -1,0 +1,46 @@
+.faq{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding:0 25rem 10rem 25rem;
+     @media only screen and (max-width: 75em) {
+            &{
+                padding:0 15rem 10rem 15rem;
+            } }
+     @media only screen and (max-width: 56.25em) {
+            &{
+                padding:0 10rem 10rem 10rem;
+            } }
+     @media only screen and (max-width: 37.5em) {
+            &{
+                padding:0 5rem 10rem 5rem;
+            } }
+    &--content{
+        margin-top: 2rem;
+        width: 100%;
+        padding-bottom: 2rem;
+        border-bottom: 2px solid $col-prim;
+        transition: all .2s;
+        &--q{
+            text-align: start;
+        }
+        &--a{
+            text-align: start;
+        }
+
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    
+    &--q{
+        color: $col-prim;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    &--a{
+        color: $col-prim;
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+}

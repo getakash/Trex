@@ -1,0 +1,197 @@
+.form-tag{
+    width: 70%;
+    transform: skewX(3deg);
+    .or{
+        text-align: center;
+        font-weight: 600;
+        color: $col-white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &--icon{
+            display: inline-block;
+            margin-left: 1rem;
+            transition: all .2s;
+            cursor: pointer;
+            &:hover{
+                transform: scaleX(1.15) scaleY(1.15);
+            }
+        }
+    }
+}
+
+.form{
+    // transform: skewY(-3deg);
+    width: 30%;
+    border-radius: 2px;
+    @media only screen and (max-width: 57.25em) {
+        width: 80%;
+        padding-top: 5rem;
+        margin-bottom: 7rem;
+        padding-bottom: 5rem;
+    }
+
+    &--input{
+        width: 100%;
+        height: 3.5rem;
+        font-size: 2rem;
+        outline: none;
+        padding: 1rem;
+        box-shadow: 0 1rem 2rem rgba($col-grey-dark,0.6);
+        margin-bottom: 2rem;
+        border: none;
+        border-radius: 3px;
+        transition: all .2s;
+        &:focus{
+            transform: scale(1.05);
+        }
+        &:focus:invalid{
+            border-bottom: 3px solid rgb(209, 16, 16);
+        }
+        &:focus:valid{
+            border-bottom: 3px solid rgb(61, 175, 16);
+        }
+    }
+    &-login{
+        background-image: linear-gradient(to right bottom ,rgba($col-blue,0.5), rgb(54, 54, 219));
+        align-items: center;
+        box-shadow: 0 1rem 2rem rgba($col-grey-dark,0.6);
+        transition: all .3s;
+        animation: moveInLeft 0.6s ease-out;
+
+        &--label{
+            text-align: center;
+            display: block;
+            font-size: 2.5rem;
+            margin-bottom: 1rem ;
+        }
+        &--pwd{
+            margin-bottom: 3.5rem;
+        }
+        &--google{
+            border: none;
+            padding: .5rem;
+            font-size: 2rem;
+            background-color: orangered;
+            color: $col-white;
+        }
+        &--fb{
+            border: none;
+            padding: .5rem;
+            font-size: 2rem;
+            background-color: rgb(9, 76, 219);
+            color: $col-white;
+        }
+        &:hover{
+            outline: 1rem solid $col-prim;
+            outline-offset: 1rem;
+        }
+    }
+    &-signup{
+         background-image: linear-gradient(to right bottom ,rgba($col-green,0.5), green);
+        align-items: center;
+        box-shadow: 0 1rem 2rem rgba($col-grey-dark,0.6);
+        transition: all .3s;
+        animation: moveInRight 0.6s ease-out;
+
+         &--label{
+             text-align: center;
+            display: block;
+            font-size: 2.5rem;
+            margin-bottom: 1rem ;
+        }
+       
+        &--conf-pwd{
+            margin-bottom: 3.5rem;
+        }
+        &:hover{
+            outline: 1rem solid $col-prim;
+            outline-offset: 1rem;
+        }
+    }
+}
+.icon{
+    color: orangered;
+    font-size: 5rem;
+    background-color: red;
+}
+
+.form-min{
+    padding: 3rem 2rem;
+    text-align: start;
+    &--text-input{
+        display: block;
+        width: 91%;
+        font-size: 2rem;
+        margin-bottom: .7rem;
+        padding: .5rem;
+        text-decoration: none;
+        color: $col-grey-dark;
+
+        &::placeholder{
+            color: $col-grey-dark;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+        &:focus{
+            outline: 2px solid $col-white;
+            outline-offset: 2px;
+        }
+        
+    }
+    &--amount{
+        display: inline-block;
+        width: 35%;
+        font-size: 1.75rem;
+        padding: .5rem;
+        margin-right: 2%;
+        text-decoration: none;
+        color: $col-grey-dark;
+        font-weight: bold;
+
+        &::placeholder{
+            color: $col-grey-dark;
+             font-size: 1.5rem;
+             font-weight: 500;
+        }
+        &:focus{
+            outline: 2px solid $col-white;
+            outline-offset: 2px;
+        }
+    }
+    &--dropdown{
+        display: inline-block;
+        width: 40%;
+        font-size: 1.75rem;
+        padding: .5rem;
+        margin-right: 2%;
+        text-decoration: none;
+        color: $col-grey-dark;
+        font-weight: bold;
+
+        &:focus{
+            outline: 2px solid $col-white;
+            outline-offset: 2px;
+        }
+        &-option{
+
+        }
+    }
+    &--submit{
+        display: inline-block;
+        width: 10%;
+        font-size: 1.75rem;
+        padding: .5rem;
+        text-decoration: none;
+        background-color: white;
+        color: $col-grey-dark;
+        border: none;
+        font-weight: bold;
+
+        &:hover{
+            outline: 2px solid $col-white;
+            outline-offset: 2px;
+        }
+    }
+}

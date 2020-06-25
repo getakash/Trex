@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/accordion.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <script type="text/javascript" src="/jquery.js"></script>
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="shortcut icon" type="image/png" href="/icon-purple.png
+    ">
+    <title>Trex(Your expenses tracker)</title>
+</head>
+
+<body>
+    <div class="navigation">
+        <a href="/" class="navigation--link">Home</a>
+        <a href="/main" class="navigation--link navigation--link-active">Track</a>
+        <!-- <div class="navigation--icon navigation--link"> -->
+        <img src="/icon-main.png" alt="main-icon" class="navigation--main-icon">
+        <!-- </div> -->
+        <a href="/register" class="navigation--link">Login</a>
+        <a href="" class="navigation--link">F.A.Q</a>
+    </div>
+
+    <main class="userpage">
+        <section class="previous-adds">
+            <div class="previous-adds--list date-1"></div>
+            <div class="previous-adds--list date-2"></div>
+            <div class="previous-adds--list date-3"></div>
+            <div class="previous-adds--list date-4"></div>
+            <div class="previous-adds--list date-5"></div>
+            <div class="previous-adds--list date-6"></div>
+            <div class="previous-adds--list">Previous &rarr;</div>
+        </section>
+        <section class="main">
+            <div class="main--date"></div>
+            <div class="action">
+                <div class="action--container action--container-expense">
+                    <div class="action--container--button d-flex">Expense &minus;</div>
+                    <div class="action--container--form d-none">
+                        <div class="cross"> &Cross;</div>
+                        <form action="#" class="form-min" name="-">
+                            <input type="text" maxlength="40" required class="form-min--text-input" placeholder="Description" name="expense-description">
+                            <input type="number" required class="form-min--amount" placeholder="Rupees" name="expense-amount">
+                            <select name="expense-tag" required id="expense-tag" class="form-min--dropdown">
+                                <option value="Clothing" class="form-min--dropdown-option">Clothing</option>
+                                <option value="Education" class="form-min--dropdown-option">Education</option>
+                                <option value="Food" class="form-min--dropdown-option">Food</option>
+                                <option value="Health" class="form-min--dropdown-option">Health</option>
+                                <option value="Hotel" class="form-min--dropdown-option">Hotel</option>
+                                <option value="Transport" class="form-min--dropdown-option">Transport</option>
+                                <option value="Pets" class="form-min--dropdown-option">Pets</option>
+                                <option value="Personal" class="form-min--dropdown-option">Personal</option>
+                                <option value="Other" class="form-min--dropdown-option">Other</option>
+                            </select>
+                            <button type="submit" class="form-min--submit form-min--submit-expense"> &check; </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="action--container action--container-income">
+                    <div class="action--container--button d-flex">Income &plus;</div>
+                    <div class="action--container--form d-none">
+                        <div class="cross"> &Cross;</div>
+                        <form action="#" class="form-min" name="+">
+                            <input type="text" maxlength="40" required class="form-min--text-input" placeholder="Description" name="income-description">
+                            <input type="number" required class="form-min--amount" placeholder="Rupees" name="income-amount">
+                            <select name="income-tag" required id="income-tag" class="form-min--dropdown">
+                                <option value="Salary" class="form-min--dropdown-option">Salary</option>
+                                <option value="Sales" class="form-min--dropdown-option">Sales</option>
+                                <option value="Rent" class="form-min--dropdown-option">Rent</option>
+                                <option value="Other" class="form-min--dropdown-option">Other</option>
+                            </select>
+                            <button class="form-min--submit form-min--submit-income"> &check; </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="show">
+            <!-- 
+                <div class="show--box">
+                    <div class="show--box--tag"></div>
+                    <div class="show--box--description"></div>
+                    <div class="show--box--amount"></div>
+                </div> 
+            -->
+                <div class="show--balance"></div>
+            </div>
+        </section>
+    </main>
+
+<script type="text/javascript" src="/script.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

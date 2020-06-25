@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/accordion.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <link rel="shortcut icon" type="image/png" href="/icon-purple.png">
+    <title>Trex(Your expenses tracker)</title>
+</head>
+
+<body>
+    <div class="navigation">
+        <a href="/" class="navigation--link">Home</a>
+        <a href="/main" class="navigation--link">Track</a>
+        <!-- <div class="navigation--icon navigation--link"> -->
+        <img src="/icon-main.png" alt="main-icon" class="navigation--main-icon">
+        <!-- </div> -->
+        <a href="/register" class="navigation--link navigation--link-active">Login</a>
+        <a href="" class="navigation--link">F.A.Q</a>
+    </div>
+
+    
+    <main class="mt-5">
+
+        <section class="form-grp">
+            <!-- <h1 class="heading-primary">Just one step more!!</h1> -->
+            <div class="form-grp--container d-flex justify-content-around">
+                <div class="form form-login d-flex justify-content-center">
+                    <form action="#" class="form-tag">
+                        <label for="username-li" class="form-login--label heading-primary">Email:</label>
+                        <input id="username-li" type="email" class="form--input" required>
+                        <label for="password-li" class="form-login--label heading-primary">Pasword:</label>
+                        <input id="password-li" type="password" class="form--input form-login--pwd" required>
+                        <button type="submit" class="btn--prim">Login</button>
+                        <div class="or">
+                            <h2>Or</h2>
+                            <img class=or--icon src="/icon-ggl.png" alt="gi">
+                            <img class=or--icon src="/icon-fb.png" alt="fbi">
+                        </div>
+                    </form>
+                </div>
+                <div class="register">
+                    <span class="register--letter">-R-</span>
+                    <span class="register--letter">-E-</span>
+                    <span class="register--letter">-G-</span>
+                    <span class="register--letter">-I-</span>
+                    <span class="register--letter">-S-</span>
+                    <span class="register--letter">-T-</span>
+                    <span class="register--letter">-E-</span>
+                    <span class="register--letter">-R-</span>
+                </div>
+                <div class="form form-signup d-flex justify-content-center">
+                    <form action="#" class="form-tag">
+                        <label for="username-su" class="form-signup--label heading-primary">Email:</label>
+                        <input id="username-su" type="email" class="form--input" required>
+                        <label for="password-su" class="form-signup--label heading-primary">Password</label>
+                        <input id="password-su" type="password" class="form--input" required>
+                        <label for="password-suc" class="form-signup--label heading-primary">Confirm Password</label>
+                        <input id="password-suc" type="password" required class="form--input  form-signup--conf-pwd">
+                        <button class="btn--prim">Signup</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="coloumn-p d-flex justify-content-center align-items-center">
+            <img class="coloumn-p--icon" src="/icon-main.png" alt="big-icon">
+        </div>
+        <div class="coloumn-p coloumn-p-2">
+            <div class="coloumn-s--1">
+                <button class="btn--prim footer-button footer-button--1">Contact</button>
+                <button class="btn--prim footer-button footer-button--2">Credits</button>
+                <button class="btn--prim footer-button footer-button--3">About</button>
+                <button class="btn--prim footer-button footer-button--4">Privacy</button>
+                <button class="btn--prim footer-button footer-button--5">Report</button>
+            </div>
+            <div class="coloumn-s--2">
+                This website is built by <a href="http://www.linkedin.com/in/akash-verma-18135008" class="footer--link">
+                    Akash
+                    Verma</a>. You can get
+                the available code for this website on this <a href="https://github.com/Akash-vaerma-18135008/Trex" class="footer--link"> Github repo</a>. You can use
+                the code but not claim it as your own.
+            </div>
+    
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

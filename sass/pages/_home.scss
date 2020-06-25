@@ -1,0 +1,29 @@
+.mycards-deck{
+    margin: 0 auto 14rem auto;
+     @media only screen and (max-width: 37.5em) {
+            &{
+                margin: -13rem auto 14rem auto;
+            } }
+    text-align: center;
+    position: relative;
+    padding: 12rem;
+    @media only screen and (max-width: 75em) {
+            &{
+                padding: 12rem 8rem;
+            } }
+    @media only screen and (max-width: 37.5em) {
+            &{
+                padding: 4em;
+                margin: 0 auto 7rem auto;
+            } }
+    background-color: rgba($col-prim,0.2);
+
+    &--heading{
+        
+    }
+}
+
+.faq{
+    text-align: center;
+}
+

@@ -1,0 +1,60 @@
+.mycards{
+    @media only screen and (min-width: 56.25em) {
+            &{
+                display: flex;
+            } }
+    .mycard{
+        width: 30%;
+        border-radius: 3px;
+        padding: 2rem;
+        color: $col-white;
+        transition: all .2s;
+        box-shadow: 0 1rem 2rem rgba($col-grey-dark,0.8);
+        @media only screen and (max-width: 75em) {
+            &{
+                width: 30%;
+            } }
+        @media only screen and (max-width: 56.25em) {
+            &{
+                display: block;
+                width: 100%;
+                padding: 2rem 4.5rem;
+                margin-bottom: 2rem;
+            } }
+        @media only screen and (max-width: 37.5em) {
+            &{
+                padding: 1rem;
+            } }
+
+        &-1{
+            background-image: linear-gradient(to right bottom, rgba($col-sec, 0.7), rgba($col-sec-dark, 0.7)), url(../../imgs/card-img-1.jpg);
+            background-size: cover;
+            
+        }
+        &-2{
+            background-image: linear-gradient(to right bottom, rgba($col-prim-light, 0.8), rgba($col-prim, 0.8)), url(../../imgs/card-img-2.jpg);
+            background-size: cover;
+            
+        }
+        &-3{
+            background-image: linear-gradient(to right bottom,rgba($col-ter, 0.7), rgba($col-ter-dark, 0.7)), url(../../imgs/card-img-3.jpg);
+            background-size: cover;
+            
+        }
+
+        &--content{
+            font-size: 2rem;
+            text-align: center;
+            transition: all .2s;
+            @media only screen and (max-width: 37.5em) {
+            &{
+                font-size: 1.5rem;
+            } }
+        }
+
+        &:hover{
+            transform: scaleX(1.1) scaleY(1.1);
+    
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.form-grp{
+    text-align: center;
+    width: 95%;
+    position: relative;
+    // margin-bottom: 14rem;
+    transform: skewX(-3deg);
+    margin: 18rem auto 10rem auto;
+    @media only screen and (max-width: 57.25em) {
+        margin: 15rem auto 10rem auto;
+        width: 85%;
+    }
+
+    .register{
+        &--letter{
+            display: block;
+            font-size: 2.8rem;
+            @media only screen and (max-width: 57.25em) {
+                display: inline-block;
+                margin-bottom: 7rem;
+            }
+            text-align: center;
+            color: $col-prim;
+            font-weight: 700;
+            // border-bottom: 2px solid $col-prim;
+            transition: all .2s;
+            animation: fadeIn 1s ease-out;
+            &:hover{
+                transform: rotateX(180deg);
+            }
+        }
+        &--letter:not(:last-child){
+            margin-bottom: 1.5rem;
+        }
+    }
+    &--container{
+        @media only screen and (max-width: 62.5em) {
+            .form-signup--label,
+            .form-login--label{
+                font-size: 1.75rem;
+            }
+        }
+        @media only screen and (max-width: 57.25em) {
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            .form-signup--label,
+            .form-login--label{
+                font-size: 3rem;
+            }
+        }
+    }
+}

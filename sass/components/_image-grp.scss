@@ -1,0 +1,85 @@
+.image-collection{
+    margin: 12rem 3rem 16rem 2rem;
+    height: 40rem;
+    text-align: center;
+    @media only screen and (max-width: 75em) {
+            &{
+                margin: 10rem 3rem 8rem 2rem;
+            } }
+    @media only screen and (max-width: 56.25em) {
+            &{
+                margin: 10rem 3rem 10rem 2rem;
+            } }
+   
+    
+    &--quote{
+        color: $col-prim-dark;
+        font-size: 3rem;
+        transition: all .2s;
+        margin-bottom: 12rem;
+        &:hover{
+            transform: skewX(-30deg);
+            letter-spacing: .5rem;
+        }
+        @media only screen and (max-width: 56.25em) {
+            &{
+                margin-bottom: 6rem;
+                margin-top: -4rem;
+            } }
+    }
+
+    .image-grp{
+    
+    &--img{
+        width: 35rem;
+        border-radius: 1rem;
+        box-shadow: 1rem 1rem 0.6rem rgba($col-grey-dark,0.6);
+        transform: skewY(12.5deg);
+        transition: all .2s;
+        position: relative;
+        @media only screen and (max-width: 75em) {
+            &{
+                width: 28.5rem;
+                margin-bottom: 2rem;
+            } }
+
+        &:not(:last-child){
+            margin-right: -10rem;
+        }
+        @media only screen and (max-width: 56.25em) {
+            &{
+                width: 47.5%;
+                transform: skewY(0deg);
+            } 
+            &:not(:last-child){
+                margin-right: 0rem;
+            }
+        }
+
+        &:hover{
+            transform: translateY(-3px) scaleX(1.05) scaleY(1.05);
+            outline: .8rem solid $col-prim;
+            outline-offset: .5rem;
+            z-index: 6;
+            box-shadow: none;
+
+        }
+        &:hover &:not(:hover){
+            transform: scale(0.7);
+        }
+
+    }
+    &--img-1{
+        z-index: 4;
+    }
+    &--img-2{
+        z-index: 3;
+    }
+    &--img-3{
+        z-index: 2;
+    }
+    &--img-4{
+        z-index: 1;
+    }
+}
+}

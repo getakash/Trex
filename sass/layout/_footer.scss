@@ -1,0 +1,87 @@
+.footer{
+    background-color: $col-grey-dark;
+    display: flex;
+     @media only screen and (max-width: 56.25em) {
+            &{
+                flex-direction: column;
+            } }
+
+    .coloumn-p{
+        width: 50%;
+        // height: 40rem;
+        margin: 1rem auto 1rem auto;
+        &--icon{
+        }
+        @media only screen and (max-width: 56.25em) {
+            &{
+                width: 85%;
+            } }
+    }
+    .coloumn-p-2{
+        border-left: 3px solid $col-white;
+        display: flex;
+        flex-direction: column;
+
+        @media only screen and (max-width: 56.25em) {
+            &{
+                border-left: none;
+                border-top: 3px solid $col-white;
+            } }
+    }
+    .coloumn-s--1{
+        width: 100%;
+        padding: 1rem 2rem 1rem 2rem;
+        height: 18rem;
+        @media only screen and (max-width: 37.5em) {
+            &{
+                height: 14rem;
+            } }
+        // background-color: palegoldenrod;
+        margin: 1rem auto 1rem auto;
+        display: flex;
+
+    }
+    .coloumn-s--2{
+        padding: 2rem;;
+        color: $col-white;
+        font-size: 2rem;
+    }
+
+    &-button{
+        width: 10rem;
+        height: 5rem;
+        border-radius: 1px;
+        padding-top: 1rem;
+        font-size: 2rem;
+        @media only screen and (max-width: 62.5em) {
+            &{
+                width: 8rem;
+                font-size: 1.75rem;
+            } }
+        @media only screen and (max-width: 37.5em) {
+            &{
+                width: 6rem;
+                height: 4rem;
+                font-size: 1rem;
+            } }
+
+        &--2{
+            align-self: flex-end;
+        }
+        &--4{
+            align-self: flex-end;
+        }
+    }
+    &--link:link,
+    &--link:visited{
+        font-size: 2.25rem;
+        display: inline-block;
+        text-decoration: none;
+        color: $col-prim-light;
+        text-decoration: underline;
+        transition: all .2s;
+    }
+    &--link:hover{
+        transform: translateY(-0.5rem);
+    }
+}

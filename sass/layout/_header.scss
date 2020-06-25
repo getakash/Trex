@@ -1,0 +1,156 @@
+.header{
+    height: 100vh;
+    background-image:linear-gradient(to right bottom, rgba($col-prim-dark, 1), rgba($col-prim-dark, 0.6)), url(/main-back-lg.jpg);
+    @media only screen and (max-width: 37.5em) {
+            &{
+               background-image:linear-gradient(to right bottom, rgba($col-prim-dark, 1), rgba($col-prim-dark, 0.6)), url(/main-back-md.jpg);
+            } }
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    &--main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+        @media only screen and (max-width: 75em) {
+            &{
+               width: 40%;
+            } }
+        @media only screen and (max-width: 37.5em) {
+            &{
+               padding-left: 3rem;
+            } }
+        @media only screen and (max-width: 31.25em) {
+            &{
+                width: 100%;
+                padding-left: 0;
+            } }
+        height: 100%;
+
+        &--line{
+            font-size: 2.5rem;
+            margin-top: 1.5rem;
+            @media only screen and (max-width: 44em) {
+            &{
+                font-size: 2rem;
+            } }
+            @media only screen and (max-width: 37.5em) {
+            &{
+                font-size: 1.65rem;
+            } }
+            @media only screen and (max-width: 31.25em) {
+            &{
+                font-size: 2.5rem;
+            } }
+        }
+    }
+    &--sec{
+        background-image: linear-gradient(to bottom, rgba($col-yellow, 0.7), rgba($col-yellow-dark, 0.4)), url(/image-1.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 70%;
+        height: 100%;
+        padding-top: 0rem;
+        padding-right: 11rem;
+        -webkit-clip-path: ellipse(50% 50% at 65% 40%);
+        clip-path: ellipse(50% 50% at 65% 40%);
+        @media only screen and (min-height: 68.75em) {
+            &{
+               padding-right: 6rem;
+            } }
+        @media only screen and (max-width: 65em) {
+            &{
+               padding-top: 14rem;
+            } }
+        @media only screen and (max-width: 50em) {
+            &{
+               -webkit-clip-path: ellipse(50% 50% at 50% 50%);
+                clip-path: ellipse(60% 60% at 70% 50%);
+                padding-right: 8rem;
+            } }
+        @media only screen and (max-width: 37.5em) {
+            &{
+               width: 60%;
+               padding-top: 12rem;
+               padding-right: 2rem;
+            } }
+        @media only screen and (max-width: 31.25em) {
+            &{
+                width: 0%;
+               display: none;
+            } }
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-align: end;
+
+        &--title{
+            font-size: 10rem;
+            font-weight: 800;
+            color: $col-prim-dark;
+            animation: moveInLeft 1s ease-out;
+            text-shadow: 0 1px 2px  $col-grey-dark;
+            @media only screen and (max-width: 31.25em) {
+            &{
+                display: none;
+            } }
+        }
+        &--description{
+            margin-left: 15rem;
+            font-size: 4rem;
+            font-weight: 600;
+            text-shadow: 0 1px 2px  $col-grey-dark;
+            
+            @media only screen and (max-width: 65em) {
+            &{
+                margin-left: 12rem;
+               font-size: 4rem;
+            } }
+            @media only screen and (max-width: 50em) {
+            &{
+                font-size: 4rem;
+            } }
+            @media only screen and (max-width: 43.75em) {
+            &{
+                margin-left: 10rem;
+               font-size: 4rem;
+            } }
+            @media only screen and (max-width: 40em) {
+            &{
+                margin-left: 10rem;
+               font-size: 3.75rem;
+            } }
+            @media only screen and (max-width: 37.5em) {
+            &{
+                margin-left: 10rem;
+               font-size: 3.5rem;
+            } }
+            @media only screen and (max-width: 32.5em) {
+            &{
+                margin-left: 5rem;
+               font-size: 3.5rem;
+            } }
+            @media only screen and (max-width: 31.25em) {
+            &{
+                margin-left: 5rem;
+               font-size: 3.75rem;
+            } }
+            @media only screen and (max-width: 27em) {
+            &{
+                margin-left: 5rem;
+               font-size: 3.25rem;
+            } }
+        }
+    }
+    
+
+}
+

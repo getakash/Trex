@@ -1,0 +1,26 @@
+{
+  "name": "trex",
+  "version": "1.0.0",
+  "description": "an expense tracking web app",
+  "main": "app.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss public/style.css -w",
+    "compress:css": "node-sass public/style.css public/style.css --output-style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akash-vaerma-18135008/Trex.git"
+  },
+  "author": "Akash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Akash-vaerma-18135008/Trex/issues"
+  },
+  "homepage": "https://github.com/Akash-vaerma-18135008/Trex#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
