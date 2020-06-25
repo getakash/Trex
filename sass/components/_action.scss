@@ -43,6 +43,10 @@
                 color: rgb(252, 252, 252);
                 cursor: pointer;
                 transition: all .1s;
+                @media only screen and (max-width: 37.5em){
+                    top: 1rem;
+                right: 1rem;
+                }
                 &:hover{
                     transform: translateY(-3px) scale(1.05);
                     text-shadow: 0 5px 5px $col-grey-dark;
