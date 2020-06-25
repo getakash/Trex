@@ -61,11 +61,17 @@
         @media only screen and (max-width: 56.25em){
             padding: auto;
             width: 100%;
-            
+        }
+        @media only screen and (max-width: 37.5em){
+            margin-top: 4rem;
+            width: 100%;
         }
         
         &--date{
             position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             top: 0;
             right: 0;
             font-size: 1.5rem;
@@ -75,6 +81,14 @@
             text-align: start;
             background-color: $col-prim-dark;
             clip-path: ellipse(50% 70% at 65% 25%);
+            @media only screen and (max-width: 37.5em) {
+                top: -2.5%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                clip-path: ellipse(30% 20% at 50% 50%);
+                padding: 5rem 0 ;
+                z-index: 100;
+            }
         }
     }
 }
