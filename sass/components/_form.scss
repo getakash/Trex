@@ -1,6 +1,9 @@
 .form-tag{
     width: 70%;
     transform: skewX(3deg);
+    @media only screen and (max-width: 37.5em) {
+       transform: skewX(0deg);
+    }
     .or{
         text-align: center;
         font-weight: 600;
