@@ -4,6 +4,7 @@
   "description": "an expense tracking web app",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "compile:sass": "node-sass sass/main.scss public/style.css -w",
     "compress:css": "node-sass public/style.css public/style.css --output-style compressed"
   },
